@@ -7,7 +7,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout
 
 # Load data
-data = pd.read_csv('path_to_your_stock_data.csv')
+data = pd.read_csv('data.csv')
 prices = data['Close'].values.reshape(-1, 1)
 
 # Normalize data
